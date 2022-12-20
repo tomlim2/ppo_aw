@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tom Lim</title>
+  <meta charset="utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="icon" href="favicon.gif" type="image/gif" sizes="30x30">
+  <link rel="stylesheet" href="assets/css/loadFont.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="assets/css/mycss-ver8.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="assets/js/mainpage.js"></script>
+  <script type="text/javascript" src="assets/js/myscript.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  @keyframes parallaxprss {
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+  #container{
+    position: relative;
+    top: 0;
+    left: 0;
+    /* border-bottom: solid rgba(10, 10, 10, 1) 2em; */
+  }
+  #intro_text{
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    color: white;
+
+    padding: 1vw;
+    text-transform: uppercase;
+    bottom: 5vh;
+  }
+
+  </style>
+</head>
+<body>
+  <nav id="nav">
+    <a href="index.html"><span id="menu" class="home">home</span></a> |
+    <a><span id="logo">about: Tom</span></a>
+    <section class='about-section'>
+      <div class="about-wrapper">
+        <div class="a-s about">
+          <p>
+            Hi, I am Tom, a visual designer living in San Francisco.
+            <br>
+            I make websites, 2D/3D motion, and branding.
+            <br><br>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank" >
+              tomandlim@gmail.com
+            </a>
+            <br>
+            <a href="https://www.instagram.com/tommlimm/" target="_blank" style='margin-top:1.5em'>
+              <img src="assets/imgs/Instagram_simple_icon.svg" alt="">
+            </a>
+          </p>
+        </div>
+        <div class="a-s contact">
+          <p>
+          </p>
+        </div>
+      </div>
+    </section>
+  </nav>
+  <div id="myCanvas">
+    <div id="container"></div>
+    <script src="assets/js/three/build/three.js"></script>
+    <script src="assets/js/three/loaders/OBJLoader.js"></script>
+    <script src="assets/js/three/loaders/MTLLoader.js"></script>
+
+
+    <script src="assets/js/three/postprocessing/EffectComposer.js"></script>
+    <script src="assets/js/three/postprocessing/RenderPass.js"></script>
+    <script src="assets/js/three/postprocessing/ShaderPass.js"></script>
+    <script src="assets/js/three/postprocessing/MaskPass.js"></script>
+
+    <script src="assets/js/three/shaders/VignetteShader.js"></script>
+    <script src="assets/js/three/shaders/SepiaShader.js"></script>
+    <script src="assets/js/three/shaders/FilmShader.js"></script>
+    <script src="assets/js/three/shaders/CopyShader.js"></script>
+
+    <script src="assets/js/three/bluecat.js"></script>
+    <div id="intro_text">
+      <h1>Tom's Portfolio</h1>
+    </div>
+  </div>
+
+
+  <div id="page-wrapper">
+    <div id="page-size">
+      <section id="portfolio-box">
+        <a href="children/cp1/index.html">
+          <div class="pt pt9">
+            <img class="pt-thumb" src="https://lh3.googleusercontent.com/-bsXtDU7fq40/XDNefg0WK5I/AAAAAAAAAX0/vNDrMo-NDCYHL5ScW5oWAeNscuHAsRKgQCL0BGAs/w1060-d-h596-rw/Untitled-1.gif" alt="portfolio">
+            <div class="pt-info-wrapper">
+              <div class="pt-info">
+                <h1 class="info-title">
+                  Climate Change
+                </h1>
+                <h2 class="info-detail">
+                  Infographic
+                </h2>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="children/vrcube/index.html">
+          <div class="pt pt9">
+            <img class="pt-thumb" src="children/vrcube/img_thumb.gif" alt="portfolio">
+            <div class="pt-info-wrapper">
+              <div class="pt-info">
+                <h1 class="info-title">
+                  CUBE
+                </h1>
+                <h2 class="info-detail">
+                  Interactive Virtual Reality Experience
+                </h2>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="children/3dsw/index.html">
+        <div class="pt pt10">
+          <img class="pt-thumb" src="https://lh3.googleusercontent.com/-TMX06icxyfg/XCQKK_kPv0I/AAAAAAAAANg/MdbSR2Si9i8JSYI7F3TwBCu3MkZA6gd_wCJoC/w1060-h596-n/img_thumb.gif" alt="portfolio">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                36 Days of type
+              </h1>
+              <h2 class="info-detail">
+                Personal Project
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="children/aapj3/index.html">
+        <div class="pt pt11">
+          <img class="pt-thumb" src="children/aapj3/img_thumbverR.gif" alt="">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Brain Bot
+              </h1>
+              <h2 class="info-detail">
+                Coding Drawing Rendering
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="children/exppj2/index.html">
+        <div class="pt pt8">
+          <img class="pt-thumb" src="children/exppj2/img_hero_1.jpg" alt="portfolio">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                aug.art
+              </h1>
+              <h2 class="info-detail">
+                AR
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+
+        <a href="children/exppj3/index.html">
+        <div class="pt pt7">
+          <img class="pt-thumb" src="children/exppj3/img_thumb.png" alt="portfolio">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Dream
+              </h1>
+              <h2 class="info-detail">
+                VR
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="children/concept2017/index.html">
+        <div class="pt pt1">
+          <img class="pt-thumb" src="children/concept2017/img_thumb.gif" alt="">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Curiosity
+              </h1>
+              <h2 class="info-detail">
+                Key Visuals
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="children/gd3/index.html">
+        <div class="pt pt2">
+          <img class="pt-thumb pt-thumb-long" src="children/gd3/img_thumbnail4.gif" alt="">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Olivia
+              </h1>
+              <h2 class="info-detail">
+                Brainding
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="children/intr2pj3home/index.html">
+        <div class="pt pt5">
+          <img class="pt-thumb" src="children/intr2pj3home/img_thumb.gif" alt="">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Alexander Calder
+              </h1>
+              <h2 class="info-detail">
+                Microsite
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="children/mo1/index.html">
+        <div class="pt pt3">
+          <img class="pt-thumb" src="children/mo1/img_thumb.gif" alt="">
+          <div class="pt-info-wrapper">
+            <div class="pt-info">
+              <h1 class="info-title">
+                Technologic
+              </h1>
+              <h2 class="info-detail">
+                Type in Motion
+              </h2>
+            </div>
+          </div>
+        </div>
+        </a>
+      </section>
+    </div>
+    <footer class="footer-section">
+      <div class="footer-text">
+        E-mail: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tomandlim@gmail.com" target="_blank">tomandlim@gmail.com</a>
+        <br>© Tom Lim 2018 --- Development : Tom Lim
+
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

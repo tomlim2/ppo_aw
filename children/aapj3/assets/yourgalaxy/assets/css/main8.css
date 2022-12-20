@@ -1,0 +1,261 @@
+input{
+  font: 0.7em 'Raleway', sans-serif;
+  background: black;
+  width: 554px;
+  color: white;
+  border: 0px;
+  text-align: center;
+  margin-top: -20px;
+}
+#message{
+  background: white;
+  color: black;
+}
+body{
+  background: black;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  margin: 0px;
+	padding: 0px;
+}
+#display2{
+  color: white;
+}
+.container{
+    width: 1280px;
+    height: 1631px;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.row{
+  position: relative;
+  float: left;
+}
+
+.row1{
+
+}
+.row2{
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  text-align: left;
+  font-size: 2em;
+  color: white;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 66px;
+  font-weight: 600;
+}
+#date{
+  text-align: left;
+
+}
+.brainBox{
+  position: relative;
+  /*background-color: #112637;*/
+  /*overflow: hidden;*/
+  transform: scale(0.2);
+  top: -120px;
+  left: -110px;
+  width: 200px;
+  height: 200px;
+
+  float: left;
+}
+
+.loadingscreen{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: black;
+  text-align: center;
+  padding-top: 140px;
+  transition: 0.2s all;
+}
+.loadinganimation{
+  position: absolute;
+  left: 50%;
+  top: 36%;
+  margin-left: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.lamv{
+  animation: laprss 10s infinite;
+  animation-delay: 1s;
+  transform: scale(0);
+
+}
+
+@keyframes laprss {
+  10%{
+    transform: scale(0);
+  }
+  13%{
+    transform: scale(1.1);
+  }
+  14%{
+    transform: scale(1);
+    border-radius: 50%;
+  }
+  17%{
+    transform: scale(1);
+    border-radius: 0%;
+  }
+  29%{
+    transform: scale(1);
+    background-color: white;
+  }
+  30%{
+    transform: scale(1) rotate(90deg);
+    background-color: #f43932;
+  }
+  49%{
+    transform: scale(1) rotate(90deg);
+    background-color: #f43932;
+  }
+  50%{
+    transform: scale(1) rotate(180deg);
+    background-color: #0bb18d;
+  }
+  69%{
+    transform: scale(1) rotate(180deg);
+    background-color: #0bb18d;
+  }
+  70%{
+    transform: scale(1) rotate(270deg);
+    background-color: #1a93c8;
+  }
+  89%{
+    transform: scale(1) rotate(270deg);
+    background-color: #1a93c8;
+  }
+  90%{
+    transform: scale(1) rotate(360deg);
+    background-color: white;
+  }
+
+  92%{
+    border-radius: 0%;
+  }
+
+  95%{
+    transform: scale(1);
+
+  }
+  97%{
+    transform: scale(1.1);
+    border-radius: 50%;
+  }
+  100%{
+    transform: scale(0);
+  }
+}
+
+.loadingtext{
+  margin-top: 480px;
+  font-size: 1.6em;
+}
+
+.namescreen{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: black;
+  text-align: center;
+  padding-top: 110px;
+  transition: 0.2s all;
+}
+
+#outliner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -620px;
+  margin-top: -400px;
+  width: 1240px;
+  height: 660px;
+  border: 4px white solid;
+
+}
+
+  #message{
+    width: 128px;
+    margin-left:5px;
+    font-size: 1.4em;
+    margin-top: 2px;
+  }
+  #clickHere{
+    margin-top: 1px;
+    padding: 5px;
+    transition: 0.4s all;
+    cursor: pointer;
+    width: 130px;
+    font-size: 1.2em;
+
+    filter: drop-shadow(1px 1px 0px gray);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+
+    text-transform: uppercase;
+  }
+  #clickHere:hover{
+    background-color: white;
+    color: black;
+  }
+
+  .brainBox0{
+    position: relative;
+
+    transform: scale(0.3);
+    top: -130px;
+    left: 50%;
+
+    margin-left: -314px;
+    margin-bottom: 12px;
+    width: 200px;
+    height: 200px;
+  }
+form{
+  margin-top: 60px;
+  z-index: 120;
+}
+#text1{
+  font-size: 2.8em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#text2{
+  font-size: 2.0em;
+}
+#text3{
+  font-weight: 600;
+}
+
+
+.iframBox{
+  position: absolute;
+  width: 1500px;
+  height: 1500px;
+  margin: 0;
+  padding: 0;
+  transform-origin: center;
+  top: 0px;
+}
+.iB1{
+  transform: rotate(90deg) rotateY(180deg);
+  left: 0px;
+
+}
+.iB2{
+  transform: rotate(-90deg);
+  left: 90px;
+}
